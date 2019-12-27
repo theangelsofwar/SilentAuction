@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './AuctionItem.css'
 const AuctionItem =({AuctionItems, deleteAuctionItem})=>{
   
     // const { name, bids }=this.props;

@@ -1,6 +1,7 @@
 import React, {Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+// import './AuctionItem.css';
 import AuctionItem from './AuctionItem';
 import AddAuctionItem from './AddAuctionItem';
 
@@ -26,7 +27,7 @@ class App extends Component {
   deleteAuctionItem = (id) => {
       console.log(id);
       let auctionItems = this.state.AuctionItems.filter(item => {
-        return item.id!==id
+        return item.id !== id
       });
       this.setState({
         AuctionItems: auctionItems
@@ -37,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.state.deleteAuctionItem} name="Auction" />
+          <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.deleteAuctionItem} name="Auction" />
           <img src="" className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
