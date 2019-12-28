@@ -8,14 +8,14 @@
 }
 
 form{
-  background: rgba(245, 255, 58, 0.755);
+  background: rgb(248, 255, 118);
   padding: 23px 13px 6px 17px;
   color: rgba(223, 42, 126, 0.74);
 }
  #wanted{
-  background: rgb(194, 195, 198);
+  background: rgba(223, 154, 255, 0.89);
   padding: 13px 13px 21px 21px;
-  color: rgba(74, 32, 32, 0.845);
+  color: rgba(38, 73, 75, 0.845);
  }
 
 @media (prefers-reduced-motion: no-preference) {

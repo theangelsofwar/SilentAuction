@@ -1,6 +1,9 @@
 import React from 'react';
-
-const About = () => {
+import {withRouter} from 'react-router-dom'
+const About = (props) => {
+  setTimeout(() =>{
+    props.history.push('/contact');
+  },30000);
   return (
     <div className="container">
       <h4 className="center">
@@ -12,4 +15,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default withRouter(About);

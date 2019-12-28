@@ -87,7 +87,7 @@ class App extends Component {
           <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.deleteAuctionItem} name="Auction" />
           <img src="" className="App-logo" alt="logo" />
           <p>
-               <code>|Artemis Silent Auction|</code> 
+               <code> Silent Art Auction</code> 
           </p>
           <a
             className="App-link"
