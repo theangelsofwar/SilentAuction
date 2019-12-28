@@ -12,7 +12,7 @@ import AddWatchItem from './AddWatchItem';
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-
+import Post from './components/Post'
 
 class App extends Component {
   state = {
@@ -82,6 +82,8 @@ class App extends Component {
         <Route exact path='/home' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
+        <Route path='/:post_id' component={Post} />
+
         </BrowserRouter>
         <header className="App-header">
           <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.deleteAuctionItem} name="Auction" />
