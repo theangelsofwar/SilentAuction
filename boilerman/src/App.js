@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route  } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 // import './AuctionItem.css';
 import AuctionItem from './AuctionItem';
 import AddAuctionItem from './AddAuctionItem';
 import WatchItems from './WatchItems';
 import AddWatchItem from './AddWatchItem';
+
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+
 
 class App extends Component {
   state = {
@@ -70,11 +77,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <BrowserRouter>
+        <Navbar />
+        <Route exact path='/home' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
+        </BrowserRouter>
         <header className="App-header">
           <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.deleteAuctionItem} name="Auction" />
           <img src="" className="App-logo" alt="logo" />
           <p>
-               <code>~|Artemis Silent Auction|~</code> 
+               <code>|Artemis Silent Auction|</code> 
           </p>
           <a
             className="App-link"
