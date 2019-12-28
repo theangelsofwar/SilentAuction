@@ -1,5 +1,6 @@
 import React from 'react';
-import './AuctionItem.css'
+import './AuctionItem.css';
+
 const AuctionItem =({AuctionItems, deleteAuctionItem})=>{
   
     // const { name, bids }=this.props;
@@ -28,6 +29,7 @@ const AuctionItem =({AuctionItems, deleteAuctionItem})=>{
          <div> Name: {item.name} </div>
           <div> Bids: {item.bids} </div>
           <div> Score: {item.score} </div>
+          <div> Description: {item.description} </div>
           <button onClick={() => {deleteAuctionItem(item.id)}}>Delete Item</button>
         <hr />
         </div>
@@ -37,10 +39,6 @@ const AuctionItem =({AuctionItems, deleteAuctionItem})=>{
     console.log(this)
     return(
       <div className="auction-list" >
-
-
-
-
 
         { auctionList }
       </div>
