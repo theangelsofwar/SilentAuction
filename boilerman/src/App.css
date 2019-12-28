@@ -12,6 +12,12 @@ form{
   padding: 23px 13px 6px 17px;
   color: rgba(223, 42, 126, 0.74);
 }
+ #wanted{
+  background: rgb(194, 195, 198);
+  padding: 13px 13px 21px 21px;
+  color: rgba(66, 114, 59, 0.74);
+ }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -29,8 +35,6 @@ form{
   font-size: calc(10px + 2vmin);
   color: rgb(223, 187, 227);
 }
-
-
 
 .App-link {
   color: #61cafb98;

@@ -1,17 +1,17 @@
 import React from 'react'
 
-const WatchItems = ({watchItems}) => {
+const WatchItems = ({watchItems, deleteWatchItem}) => {
   const watchItemList = watchItems.length ? (
     watchItems.map(item => {
       return(
-        <div className="collection-item">
-          <span> {item.name} </span>
+        <div className="collection-item" key={watchItems.id}>
+          <span onClick={() =>{deleteWatchItem(item.id)}}> {item.name} </span>
         </div>
       )
     })
   ) : (
-    <p className="center"> Nothin is on your Watch List</p>
-  )
+    <p className="center"> Nothing is on your Wanted List</p>
+  );
   return (
     <div className="watchitems collection">
       {watchItemList}
