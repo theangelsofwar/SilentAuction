@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route  } from 'react-router-dom';
+import { BrowserRouter, Route, Switch  } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -14,6 +14,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Post from './components/Post'
 
+import Karl from './assets/karl.png'
 class App extends Component {
   state = {
     AuctionItems: [
@@ -79,15 +80,17 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
         <Navbar />
+        <Switch>
         <Route exact path='/home' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={Contact} />
         <Route path='/:post_id' component={Post} />
-
+        </Switch>
         </BrowserRouter>
         <header className="App-header">
+        
           <AuctionItem AuctionItems={this.state.AuctionItems} deleteAuctionItem={this.deleteAuctionItem} name="Auction" />
-          <img src="" className="App-logo" alt="logo" />
+          <img src={Karl} className="App-logo" alt="logo" />
           <p>
                <code> Silent Art Auction</code> 
           </p>
