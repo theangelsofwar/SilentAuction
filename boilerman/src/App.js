@@ -18,9 +18,9 @@ import Karl from './assets/karl.png'
 class App extends Component {
   state = {
     AuctionItems: [
-      { name:"Karl 1", description:"AW 17", bids:21, id:1, score:0 },
-      { name:"Karl 2", description:"AW 18",bids:21, id:2, score:0 },
-      { name:"Karl 3", description:"SS 18",bids:201, id:3, score:0 },
+      { name:"Celine", description:"AW 17", bids:21, id:1, score:11 },
+      { name:"Hugo Boss", description:"AW 18",bids:21, id:2, score:9 },
+      { name:"Saint Laurent", description:"SS 18",bids:20, id:3, score:0 },
     ],
     WatchItems: [
         { name:"Karl 1", description:"AW 17", content:"AW 17 Was most profitable business season with highest Design turnover rate, keep an eye out"},
