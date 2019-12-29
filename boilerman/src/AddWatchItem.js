@@ -22,7 +22,7 @@ class AddWatchItem extends Component {
   render(){
     return (
       <div> 
-      <h6> | May the Biddings be ever in your favor |</h6>
+      <h4> | Low Risk | High Yield |</h4>
         <form onSubmit={this.handleSubmit}>
           <label> Add to Wanted List: </label>
           <input type="text" onChange={this.handleChange} value={this.state.content} />

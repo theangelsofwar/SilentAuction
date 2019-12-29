@@ -38,9 +38,8 @@ class Home extends Component {
     return (
       <div className="container">
         <h4 className="center">
-          Home 
+          Current Live Bids:
         </h4>
-        <p> Current Live Bids: </p>
         {postList}
       </div>
     )

@@ -19,4 +19,4 @@ const Contact = (props) => {
   )
 }
 
-export default withRouter(Contact);
+export default Contact;

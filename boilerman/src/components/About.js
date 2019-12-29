@@ -1,8 +1,7 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
 import Rainbow from '../hoc/rainbow';
 
-const About = (props) => {
+const About = () => {
   // setTimeout(() =>{
   //   props.history.push('/contact');
   // },30000);
@@ -10,9 +9,8 @@ const About = (props) => {
     <div className="container">
       <h4 className="center">
       About
-
       </h4>
-      <p> Silent Bidding App</p>
+      <p> Silent Auctioning App</p>
     </div>
   )
 }

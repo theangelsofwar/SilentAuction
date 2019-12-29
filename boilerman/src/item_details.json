@@ -1,0 +1,21 @@
+[
+  {
+      "id": 111,
+      "name":"Texas Longhorn",
+      "score": 200,
+      "image":"image1.jpg"        
+  },
+  {
+      "id": 112,
+      "name":"Hereford",
+      "score": 300,
+      "image":"image2.jpg" 
+  },
+  {
+      "id": 113,
+      "name":"Shorthorn",
+      "score": 350,
+      "image":"image3.jpg" 
+  }
+  
+]
